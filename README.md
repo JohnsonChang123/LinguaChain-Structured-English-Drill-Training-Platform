@@ -50,15 +50,3 @@ alembic upgrade head
 python -m app.seed_data
 uvicorn app.main:app --reload
 ```
-
-## GitHub Pages (Frontend)
-This repository includes a GitHub Actions workflow at `.github/workflows/deploy-pages.yml` to deploy the **frontend only** to GitHub Pages whenever `main` is updated.
-
-### One-time repository settings
-1. Go to **Settings → Pages**.
-2. Set **Build and deployment / Source** to **GitHub Actions**.
-3. (Optional) Add repository variable `VITE_API_BASE_URL` under **Settings → Secrets and variables → Actions → Variables** so the deployed frontend can call your hosted backend API.
-
-### Notes
-- GitHub Pages hosts static files only, so FastAPI/PostgreSQL are **not** deployed on Pages.
-- The app uses `HashRouter` for reliable routing on GitHub Pages (`/#/login`, `/#/courses`, etc.).
