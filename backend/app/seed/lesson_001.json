@@ -1,0 +1,61 @@
+{
+  "course": {
+    "title": "FSI English Starter",
+    "cefr_level": "A1",
+    "description": "Basic sentence pattern drills for beginners."
+  },
+  "lesson": {
+    "title": "Buying Things",
+    "transcript": "I want to buy a book.",
+    "audio_url": "",
+    "source_name": "VOA Learning English - Let's Learn English",
+    "source_url": "https://learningenglish.voanews.com/",
+    "license_name": "Public Domain for VOA-produced materials",
+    "license_url": "https://learningenglish.voanews.com/p/6021.html",
+    "attribution_text": "Adapted from VOA Learning English. Credit: learningenglish.voanews.com"
+  },
+  "drills": [
+    {
+      "drill_type": "substitution",
+      "prompt_text": "Replace 'book' with 'coffee'",
+      "base_sentence": "I want to buy a book.",
+      "target_answer": "I want to buy coffee.",
+      "metadata_json": {
+        "slot": "object",
+        "replacement": "coffee"
+      },
+      "sequence_order": 1
+    },
+    {
+      "drill_type": "substitution",
+      "prompt_text": "Replace 'book' with 'a ticket'",
+      "base_sentence": "I want to buy a book.",
+      "target_answer": "I want to buy a ticket.",
+      "metadata_json": {
+        "slot": "object",
+        "replacement": "a ticket"
+      },
+      "sequence_order": 2
+    },
+    {
+      "drill_type": "transformation",
+      "prompt_text": "Change to negative",
+      "base_sentence": "She is a teacher.",
+      "target_answer": "She is not a teacher.",
+      "metadata_json": {
+        "rule": "affirmative_to_negative"
+      },
+      "sequence_order": 3
+    },
+    {
+      "drill_type": "transformation",
+      "prompt_text": "Change to question",
+      "base_sentence": "She is a teacher.",
+      "target_answer": "Is she a teacher?",
+      "metadata_json": {
+        "rule": "affirmative_to_question"
+      },
+      "sequence_order": 4
+    }
+  ]
+}
